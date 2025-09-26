@@ -1,0 +1,183 @@
+body {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/premium-photo/marietta-blue-rough-abstract-background-design_851755-188659.jpg?semt=ais_incoming&w=740&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-top: 40px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-shadow: 0 4px 24px rgba(28, 52, 109, 0.25);
+    animation: fadeInForm 1s;
+}
+
+form {
+    width: 380px;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.27);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 22px;
+    border: 1.2px solid rgba(255, 255, 255, 0.24);
+    padding: 26px 20px 30px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInForm 1.2s ease;
+}
+
+form:hover {
+    transform: scale(1.03);
+    box-shadow: 0 14px 48px 0 rgba(31, 38, 135, 0.40);
+    border: 1.7px solid #fff;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+}
+
+td {
+    font-weight: 600;
+    font-size: 16px;
+    color: #d0c6f1;
+    padding: 10px 0;
+    transition: color 0.2s;
+    text-shadow: 0 2px 6px rgba(31, 38, 135, 0.10);
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+select,
+textarea {
+    width: 94%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 2px 9px rgba(31, 38, 135, 0.10);
+    font-size: 15px;
+    color: #353b4a;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.23s;
+    animation: fadeInField 0.8s;
+}
+
+input[type="text"]:hover,
+select:hover,
+textarea:hover {
+    background: rgba(255, 255, 255, 0.34);
+    transform: scale(1.04);
+    box-shadow: 0 4px 13px rgba(31, 38, 135, 0.15);
+}
+
+/* Checkbox, Radio */
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #653fff;
+    transform: scale(1.17);
+    margin-left: 5px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: accent-color 0.2s, transform 0.2s;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    accent-color: #51e7fa;
+    animation: pulse 0.42s;
+}
+
+/* Button Styles */
+.button td {
+    text-align: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 33px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    background: linear-gradient(90deg, #ffe8a3 0%, #fad7ff 100%);
+    color: #172a3a;
+    cursor: pointer;
+    box-shadow: 0 3px 13px rgba(31, 38, 135, 0.16);
+    transition: background 0.33s, transform 0.18s, box-shadow 0.24s;
+    animation: fadeInField 1.13s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: linear-gradient(90deg, #b8fff9 0%, #f7ffb3 100%);
+    transform: scale(1.08);
+    box-shadow: 0 7px 20px rgba(31, 38, 135, 0.25);
+}
+
+/* Animation Effects */
+@keyframes fadeInForm {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInField {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.13);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive (Mobile/Tablet) */
+@media (max-width: 600px) {
+    form {
+        width: 98vw;
+        padding: 9px;
+        border-radius: 12px;
+    }
+
+    .table {
+        font-size: 15px;
+    }
+
+    td {
+        font-size: 14px;
+        padding: 7px 0;
+    }
+}

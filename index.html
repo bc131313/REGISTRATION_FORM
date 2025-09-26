@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+        <h1>STUDENT REGISTRATION FORM</h1>
+    </center>
+    <form>
+        <table class="table">
+            <!-- Name -->
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="First_Name"></td>
+            </tr>
+            
+            <!-- Course Applied For -->
+            <tr>
+                <td>Course Applied For</td>
+                <td>
+                    <select name="course">
+                        <option value="MCP">MCP</option>
+                        <option value="DCP">DCP</option>
+                        <option value="PDP">PDP</option>
+                        <option value="Clavel">Clavel</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Gender -->
+            <tr>
+                <td>Gender</td>
+                <td>
+                    Male <input type="radio" name="gender" value="male">
+                    Female <input type="radio" name="gender" value="female">
+                </td>
+            </tr>
+            
+            <!-- Address -->
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea name="address" rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+            
+            <!-- Country -->
+            <tr>
+                <td>Country</td>
+                <td>
+                    <input type="text" name="country" value="India" readonly>
+                </td>
+            </tr>
+            
+            <!-- Hobbies -->
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    Drawing <input type="checkbox" name="hobby_drawing" value="Drawing">
+                    Singing <input type="checkbox" name="hobby_singing" value="Singing">
+                    Dancing <input type="checkbox" name="hobby_dancing" value="Dancing">
+                    Cooking <input type="checkbox" name="hobby_cooking" value="Cooking">
+                </td>
+            </tr>
+            
+            <!-- Submit and Reset -->
+            <tr class="button">
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+
+</html>
